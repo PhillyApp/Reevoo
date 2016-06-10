@@ -27,7 +27,8 @@ class Product extends React.Component {
           </span>
           <span className="span-2">
             <h3 className="product-infos">
-              <span className="product-name">{details.name}</span>              
+              <span className="product-name">{details.name}</span>
+              <span> - </span>              
               <span className="price">{h.formatPrice(details.price)}</span>
               <span className={details.descDiscount ? 'product-discount' : 'hidden'}>{details.descDiscount}</span>
             </h3>
