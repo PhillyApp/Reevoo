@@ -1,0 +1,259 @@
+/************************
+  Colours
+************************/
+	
+	$colour-white: 									#fff !default;
+
+	/*
+	  Grey
+	*/
+
+	$colour-grey:                           		#e8ecf0 !default;
+	$colour-grey-dark:                            	#121c25 !default;
+	$colour-grey-light:                            	#f7f7f7 !default;
+
+	/*
+		Green
+	*/
+	$colour-green:									#04bab1;
+	$colour-green-dark:								#036964;
+
+	/*
+		Red
+	*/
+	$colour-red:									#da3f3f;
+
+/************************
+  Fonts
+************************/
+
+	$main-font-family:								'Open Sans', sans-serif;
+	$main-font-size:								15px;
+
+
+/************************
+  Padding
+************************/
+	$padding-l:										15px;					
+	$padding-m:										7px;
+
+/************************
+  Margin
+************************/
+	$margin-l:										15px;					
+	$margin-m:										7px;
+
+
+/************************
+  Radius
+************************/
+	$radius-l:										3px;	
+
+
+/************************
+  Variables
+************************/
+	
+	$body-colour: 									$colour-grey;
+
+
+	$box-colour: 									$colour-white;
+	$box-colour-border: 							$colour-green;
+	$box-padding:									$padding-l;
+	$box-margin:									$padding-l;
+
+
+	$btn-colour:									$colour-white;
+	$btn-colour-background: 						$colour-grey-dark;
+	$btn-colour-border:								$colour-grey-dark;
+
+	$btn-border-radius:								$radius-l;
+
+	$btn-colour-primary:							$colour-green;
+	$btn-colour-border-primary:						$colour-green-dark;
+
+	$order-padding:									$padding-l;
+	$order-background-colour:						$colour-grey-dark;
+	$order-border-radius:							$radius-l;
+	$order-colour:									$colour-white;
+	$order-colour-li-border-bottom:					$colour-grey-dark;
+	$order-padding-li:								$padding-m;
+
+/************************
+  Web Site
+************************/
+
+	/*********************
+	  Base
+	*********************/
+	ul, li {
+		margin:0;
+		padding:0;
+		list-style-type: none;
+	}
+
+	.float-left {
+		display:block;
+		float:left;
+	}
+
+	.float-right {
+		display:block;
+		float:right;
+	}
+
+	/*********************
+	  Grid
+	*********************/
+	.span-3 {
+		float: left;
+		width:100px / 300px * 100%;
+	}
+
+	.span-2 {
+		float: left;
+		width:150px / 300px * 100%;
+	}
+
+	.span-4 {
+		float: left;
+		width:200px / 300px * 100%;
+	}
+
+
+
+	/*********************
+	  Layout
+	*********************/
+
+	.clearfix {
+		overflow: hidden;
+    	z-index: 1;
+	}
+	html {
+		margin:0;
+		padding:0;
+		font-family:$main-font-family;
+		font-size:$main-font-size;
+		* {
+			border-box:box-sizing;
+		}
+	}
+
+	body {
+		background:$body-colour;
+	}
+
+	/*********************
+	  Button
+	*********************/
+	.button-remove {
+		background:none;
+		color:	$colour-red;
+		border:none;
+		font-size:120%;
+		cursor:pointer;
+
+	}
+	.button {
+		padding: 7px 10px;
+		display:block;
+		background:$btn-colour-background;
+		border:none;
+		border-radius: $btn-border-radius;
+		border-bottom: 2px solid $btn-colour-border;
+		color: $btn-colour;
+		text-transform:uppercase;
+		cursor:pointer;
+		font-size:100%;
+	}
+	button:focus {
+		outline:0;
+	}
+	.button-primary {
+		background: $btn-colour-primary;
+		border-bottom-color:$btn-colour-border-primary;
+	}
+
+	/*********************
+	  Search
+	*********************/
+
+		///////////////
+		// Count Animation
+		//////////////
+		.count-enter {
+			transition: all 0.25s;
+		  	transform: translateY(100%); // start it just off screen
+		}
+		  
+		.count-enter-active {
+			transform: translateY(0);
+		}
+		    
+		    
+		.count-leave {
+			transition: all 0.25s;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: translateY(0);  // 
+		}
+		  
+		.count-leave-active {
+			transform: translateY(-100%);  // 
+		}
+		span.count {
+			 position: relative;
+		      overflow: hidden;
+		      float: left; // only works if it's floated?!
+		      display: inline-block;
+		      transition: all 0.5s ;
+		}
+
+        
+
+		///////////////
+		// box
+		//////////////
+		.box {
+		    background: $box-colour;
+		    border-top: 3px solid $box-colour-border;
+		    position: relative;
+		    padding: $box-padding;
+		    margin: $box-margin;
+		   	text-transform:uppercase;
+		}
+
+		///////////////
+		// order
+		//////////////
+		.order-title {
+			font-weight:normal;
+			text-transform:uppercase;
+			background: $order-background-colour;
+			color:$order-colour;
+			border-radius:$order-border-radius;	
+			padding: $order-padding;
+			text-align:center;		
+		}
+		.order-wrap {
+			max-width: 300px;
+	    	margin: auto;
+		}
+		.order {
+			li {
+				padding: $padding-m 0;
+			    border-bottom: 1px dotted $order-colour-li-border-bottom;
+			    margin-bottom: $margin-m;
+			}
+			li:last-child {
+				border:none;
+			}
+			.total {
+				text-align:right;
+			}
+		}
+
+
+ 
