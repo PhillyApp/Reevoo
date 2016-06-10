@@ -17,8 +17,7 @@ class Order extends React.Component {
 
     return (
       <li className="clearfix" key={key}>
-        <span className="float-left">
-          
+        <span className="float-left">          
           <CSSTransitionGroup component="span" transitionName="count" transitionLeaveTimeout={250} transitionEnterTimeout={250} className="count">
             <span key={count}>{count}</span>
           </CSSTransitionGroup>
@@ -58,7 +57,6 @@ class Order extends React.Component {
   render() {
     var orderIds = Object.keys(this.props.order);    
     var total = orderIds.reduce((prevTotal, key)=> {
-      debugger
       var product = this.props.products[key];
       var count = this.props.order[key];
       if(product) {       

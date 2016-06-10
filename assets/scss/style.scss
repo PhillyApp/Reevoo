@@ -23,6 +23,11 @@
 	*/
 	$colour-red:									#da3f3f;
 
+	/*
+		Yellow
+	*/
+	$colour-yellow:									#fbae02;
+
 /************************
   Fonts
 ************************/
@@ -62,6 +67,8 @@
 	$box-padding:									$padding-l;
 	$box-margin:									$padding-l;
 
+	$product-colour-discount:						$colour-yellow;
+	$product-colour:								$colour-white;
 
 	$btn-colour:									$colour-white;
 	$btn-colour-background: 						$colour-grey-dark;
@@ -78,6 +85,7 @@
 	$order-colour:									$colour-white;
 	$order-colour-li-border-bottom:					$colour-grey-dark;
 	$order-padding-li:								$padding-m;
+
 
 /************************
   Web Site
@@ -223,6 +231,13 @@
 		    padding: $box-padding;
 		    margin: $box-margin;
 		   	text-transform:uppercase;
+		   	.product-discount {
+		   		font-size:50%;
+		   		display:block;
+		   		background:	$product-colour-discount;
+		   		color:$colour-white;
+		   		padding:2px;
+		   	}
 		}
 
 		///////////////

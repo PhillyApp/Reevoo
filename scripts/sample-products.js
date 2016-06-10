@@ -4,6 +4,7 @@ module.exports = {
     name : 'Fruit tea',
     image : './build/assets/images/seo-prefix-fruit-tea.jpg',
     desc : 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+    descDiscount:'Buy one and get one fro free',
     price : 311,
     discount : true,
     rule:'buyOneGetOne'
@@ -16,6 +17,7 @@ module.exports = {
     price : 500,
     rule:'dicount',
     discount : true,
+    descDiscount:'buy more than 2 item and pay £4.50 each',
     minimumProduct:3,
     discountPrice: 450
   },
