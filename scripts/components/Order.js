@@ -13,7 +13,7 @@ class Order extends React.Component {
   renderOrder(key) {
     var product = this.props.products[key];
     var count = this.props.order[key];
-    var removeButton = <button className="button-remove" onClick={this.props.removeFromOrder.bind(null,key)}>&times;</button>
+    var removeButton = <button className="button-remove" onClick={this.props.removeFromOrder.bind(null,key)}>remove</button>
 
     return (
       <li className="clearfix" key={key}>
